@@ -60,10 +60,21 @@ html {
   font-family: 'Muller', sans-serif;
 }
 
+h2,
+h4 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
 .container {
   width: 1170px;
   margin: auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
 }
+
+/* header---------------------------------------------------- */
 
 .header-top,
 .header-bottom,
@@ -92,6 +103,12 @@ html {
 
 .nav-list {
   display: flex;
+  
+}
+
+.nav-link {
+  color: #666666;
+
 }
 
 .nav-item:not(:last-child) {
@@ -109,5 +126,93 @@ html {
 }
 
 .bottom-right-link {
+  padding: 13px 20px;
+  border: 1px solid;
+  border-radius: 10px;
   color: #CC9933;
 }
+
+.bottom-right-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Special------------------------------------------ */
+
+.special {
+  margin-top: 70px;
+}
+
+.special-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #333333;
+}
+
+.special-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+  flex-wrap: wrap;
+}
+
+.special-item:nth-child(1), 
+.special-item:nth-child(2) {
+  width: 573px;
+  height: 258px;
+  padding: 40px 108px 40px 45px;
+  border-radius: 15px; 
+  background-size: contain;
+}
+
+.special-item:nth-child(1) {
+  background: url(/img/Rectangle15.jpg) center center no-repeat white;
+  margin-bottom: 24px;
+}
+
+.special-item:nth-child(2) {
+  background: url(/img/Rectangle16.jpg) center center no-repeat white;
+}
+
+.special-item-heading {
+  margin: 0;
+  width: 420px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.special-item-price {
+  margin-top: 15px;
+  margin-bottom: 47px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.special-item-link {
+  color: #F0BF5F;
+}
+
+.special-item:nth-child(3) {
+  width: 573px;
+  height: 540px;
+  padding: 212px 229px 40px 45px;
+  background: url(/img/33.jpg) center center no-repeat white;
+}
+
+.special-item:nth-child(3) .special-item-heading {
+  width: 299px;
+  height: 180px;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.special-item:nth-child(3) .special-item-price {
+  font-size: 30px;
+}
+
