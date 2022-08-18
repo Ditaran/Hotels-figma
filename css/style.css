@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-  url('../fonts/MullerRegular.woff2') format('woff2'),
-  url('../fonts/MullerRegular.woff') format('woff');
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-  url('../fonts/MullerMedium.woff2') format('woff2'),
-  url('../fonts/MullerMedium.woff') format('woff');
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-  url('../fonts/MullerLight.woff2') format('woff2'),
-  url('../fonts/MullerLight.woff') format('woff');
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-  url('../fonts/MullerBold.woff2') format('woff2'),
-  url('../fonts/MullerBold.woff') format('woff');
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
 }
 
 * {
@@ -39,13 +39,16 @@
 }
 
 .body {
-  background-color: #F1F1F1;
+  background-color: #e5e5e5;
 }
 
 a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -58,12 +61,6 @@ img {
 
 html {
   font-family: 'Muller', sans-serif;
-}
-
-h2,
-h4 {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
 }
 
 .container {
@@ -103,7 +100,6 @@ h4 {
 
 .nav-list {
   display: flex;
-  
 }
 
 .nav-link {
@@ -118,6 +114,7 @@ h4 {
 .header-top {
   margin-top: 30px;
 }
+
 .header-bottom {
   margin-top: 30px;
   padding: 27px 45px;
@@ -138,43 +135,41 @@ h4 {
 
 /* Special------------------------------------------ */
 
-.special {
-  margin-top: 70px;
-}
 
-.special-heading {
-  margin-top: 0;
-  margin-bottom: 0;
+.section-headings {
+  margin-top: 70px;
+  margin-bottom: 20px;
   margin-left: 40px;
   font-weight: 400;
   font-size: 40px;
+  line-height: 40px;
   color: #333333;
 }
 
 .special-list {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   height: 540px;
   flex-wrap: wrap;
 }
 
-.special-item:nth-child(1), 
+.special-item:nth-child(1),
 .special-item:nth-child(2) {
   width: 573px;
   height: 258px;
   padding: 40px 108px 40px 45px;
-  border-radius: 15px; 
+  border-radius: 15px;
   background-size: contain;
 }
 
 .special-item:nth-child(1) {
-  background: url(/img/Rectangle15.jpg) center center no-repeat white;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/Rectangle15.jpg);
   margin-bottom: 24px;
 }
 
 .special-item:nth-child(2) {
-  background: url(/img/Rectangle16.jpg) center center no-repeat white;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/Rectangle16.jpg);
 }
 
 .special-item-heading {
@@ -196,13 +191,16 @@ h4 {
 
 .special-item-link {
   color: #F0BF5F;
+  padding-right: 15px;
+  background: url(/img/Rectangle\ 2.svg) no-repeat right;
 }
 
 .special-item:nth-child(3) {
   width: 573px;
   height: 540px;
   padding: 212px 229px 40px 45px;
-  background: url(/img/33.jpg) center center no-repeat white;
+  background: url(/img/33.jpg) center center no-repeat #FFFFFF;
+
 }
 
 .special-item:nth-child(3) .special-item-heading {
@@ -216,3 +214,104 @@ h4 {
   font-size: 30px;
 }
 
+/* About-us --------------------------------*/
+
+.about-us-descriptions {
+  width: 888px;
+}
+
+.section-descriptions {
+  line-height: 32px;
+  color: #000000;
+}
+
+/* Services ---------------------------- */
+
+.services-list {
+  height: 684px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 573px;
+  height: 330px;
+  padding-top: 191px;
+  padding-bottom: 35px;
+  padding-left: 45px;
+  border-radius: 15px;
+  background: url(/img/10.jpg) center top no-repeat #FFFFFF;
+}
+
+.services-item:nth-child(2) {
+  background: url(/img/15.jpg) center top no-repeat #FFFFFF;
+}
+
+.services-item:nth-child(3) {
+  background: url(/img/12.jpg) center top no-repeat #FFFFFF;
+}
+
+.services-item:nth-child(4) {
+  background: url(/img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg) center top no-repeat #FFFFFF;
+}
+
+.services-link {
+  padding-right: 15px;
+  background: url(/img/Rectangle\ 2.svg) no-repeat right;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #F0BF5F;
+}
+
+.services-description {
+  width: 402px;
+  height: 64px;
+}
+
+/* Advantages --------------------------------- */
+
+.advantages-list {
+  height: 574px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 276px;
+  height: 276px;
+  padding-top: 40px;
+  padding-bottom: 42px;
+  padding-left: 45px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+.advantages-icon {
+  width: 66px;
+  height: 66px;
+  background: url(/img/bathtub.png);
+}
+
+.advantages-item:nth-child(2) .advantages-icon {
+  background: url(/img/hanger.png);
+}
+
+.advantages-item:nth-child(3) .advantages-icon {
+  background: url(/img/heating.png);
+}
+
+.advantages-item:nth-child(4) .advantages-icon {
+  background: url(/img/hotel-key.png);
+}
+
+.advantaged-description {
+  margin-top: 10px;
+  width: 189px;
+  height: 128px;
+
+}
