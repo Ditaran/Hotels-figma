@@ -66,8 +66,8 @@ html {
 .container {
   width: 1170px;
   margin: auto;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
 }
 
@@ -313,5 +313,130 @@ html {
   margin-top: 10px;
   width: 189px;
   height: 128px;
+}
 
+/* Placement ---------------------------- */
+
+.placement-list {
+  height: 1368px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.placement-item {
+  width: 374px;
+  height: 440px;
+  padding-top: 249px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  padding-left: 45px;
+  border-radius: 15px;
+  background: url(/img/23.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-cost-and-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.placement-cost {
+  color: #999999;
+}
+
+.placement-price {
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.placement-night {
+  color: #000000;
+}
+
+.placement-rating {
+  display: flex;
+  width: 94px;
+  justify-content: space-between;
+}
+
+.placement-rating-star {
+  width: 14px;
+  height: 14px;
+  background: url(/img/star.png);
+}
+
+.placement-rating-star-empty {
+  width: 14px;
+  height: 14px;
+  background: url(/img/star-empty.png);
+}
+
+.placement-hotel-name {
+  margin-top: 16px;
+  color: #000000;
+}
+
+.placement-location {
+  margin-top: 16px;
+  color: #999999;
+}
+
+.placement-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 20px;
+  color: #CC9933;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.placement-link-all {
+  padding-right: 15px;
+  color: #FFFFFF;
+  background: url(/img/Rectangle-empty.svg) no-repeat right;
+}
+
+
+
+.placement-item:nth-child(2) {
+  background: url(/img/24.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(3) {
+  background: url(/img/26.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(4) {
+  background: url(/img/29-1.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(5) {
+  background: url(/img/30.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(6) {
+  background: url(/img/31.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(7) {
+  background: url(/img/27.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(8) {
+  background: url(/img/29.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(9) {
+  padding-top: 373px;
+  padding-left: 54px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  padding-right: 15px;
+  background: url(/img/41.jpg) center center no-repeat #FFFFFF;
 }
