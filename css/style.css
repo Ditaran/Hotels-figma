@@ -443,6 +443,73 @@ html {
   background: url(/img/41.jpg) center center no-repeat #FFFFFF;
 }
 
+/* Want-tour-form ------------------------------- */
+
+.form-container {
+  margin-top: 70px;
+  width: 1170px;
+  height: 256px;
+  background: #e9e9e9;
+  border-radius: 15px;
+  color: #000000;
+}
+
+.form-heading {
+  padding-top: 45px;
+  margin-top: 0;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.form-list {
+  width: 1080px;
+  margin-left: 45px;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.item-name {
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.form-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  color: #000000;
+}
+
+.select-text {
+  appearance: none;
+  width: 169px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  background: url(/img/rectangle45.png);
+  background-repeat: no-repeat, repeat;
+  background-position: right center; 
+  border: none;
+  color: #000000;
+}
+
+.form-btn {
+  padding: 13px 30px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  color: #CC9933;
+}
+
+
 /* Contacts ---------------------------- */
 
 .contacts-info {
@@ -515,7 +582,6 @@ html {
   background: url(/img/frame11.png) no-repeat bottom #333333;
   border-radius: 15px;
   background-position-x: 738.62px;
-  back
 }
 
 .footer-info {

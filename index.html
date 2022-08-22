@@ -328,6 +328,66 @@
         </ul>
       </div>
     </section>
+    <section class="form">
+      <div class="container form-container">
+        <h2 class="form-heading">Хочу тур</h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" class="form" method="post">
+          <ul class="form-list">
+            <li class="form-item">
+              <div class="item-name">
+                Город вылета
+              </div>
+              <select name="city" class="select-text">
+                <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+                <option value="Москва">Москва</option>
+                <option value="Казань">Казань</option>
+                <option value="Уфа">Уфа</option>
+                <option value="Самара">Самара</option>
+                <option value="Тольятти">Тольятти</option>
+                <option value="Барнаул">Барнаул</option>
+              </select>
+            </li>
+            <li class="form-item">
+              <div class="item-name">
+                Страна
+              </div>
+              <select name="country" class="select-text">
+                <option value="Австралия" selected>Австралия</option>
+                <option value="Россия">Россия</option>
+                <option value="Англия">Англия</option>
+                <option value="Гана">Гана</option>
+                <option value="Германия">Германия</option>
+                <option value="Италия">Италия</option>
+                <option value="Франция">Франция</option>
+              </select>
+            </li>
+            <li class="form-item">
+              <div class="item-name">
+                Дата прибытия
+              </div>
+              <input type="date" name="calendar" value="2021-10-18" class="select-date">
+            </li>
+            <li class="form-item">
+              <div class="item-name">
+                Ночей
+              </div>
+              <input type="number" value="6" class="select-nights">
+            </li>
+            <li class="form-item">
+              <div class="item-name">
+                Туристы
+              </div>
+              <input type="number" value="2" class="select-tourists">
+            </li>
+            <li class="form-item">
+              <button class="form-btn">
+                Найти
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
     <section class="contacts">
       <div class="container contacts-container">
         <h2 class="section-headings">Контакты</h2>
@@ -399,7 +459,7 @@
     <div class="container footer-container">
       <div class="footer-info">
         <p class="about-company">
-          © 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»
+          © 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»
         </p>
         <p class="footer-description">
           Представленная на сайте информация носит справочный характер и не является публичной офертой
