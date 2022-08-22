@@ -94,7 +94,9 @@ html {
   color: #666666;
 }
 
-.header-button-lk {
+.header-button-account {
+  padding-left: 28px;
+  background: url(/img/Vector.png) no-repeat left;
   color: #CC9933;
 }
 
@@ -480,8 +482,8 @@ html {
   color: #000000;
 }
 
-.contacts-phone,
-.contacts-mail {
+.contacts {
+  line-height: 24px;
   color: #CC9933;
 }
 
@@ -507,18 +509,22 @@ html {
 
 .footer-container {
   margin-top: 40px;
+  margin-bottom: 30px;
   padding: 45px;
   display: flex;
-  justify-content: space-between;
-  background: #333333;
+  background: url(/img/frame11.png) no-repeat bottom #333333;
   border-radius: 15px;
+  background-position-x: 738.62px;
+  back
 }
 
-/* .footer-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
+.footer-info {
+  margin-right: 125px;
+}
+
+.footer-contacts {
+  margin-right: 269px;
+}
 
 .about-company,
 .footer-description {
@@ -541,6 +547,33 @@ html {
 }
 
 .footer-location {
+  margin-bottom: 15px;
   line-height: 30px;
   color: #FFFFFF;
 }
+
+.footer-phone {
+  margin-bottom: 15px;
+}
+
+.tripadvisor,
+.odnoklassniki,
+.vkontakte {
+  width: 25px;
+  height: 25px;
+}
+
+.tripadvisor {
+  margin-bottom: 20px;
+  background: url(/img/Group.png);
+}
+
+.odnoklassniki {
+  margin-bottom: 20px;
+  background: url(/img/ok.png);
+}
+
+.vkontakte {
+  background: url(/img/social.png);
+}
+
