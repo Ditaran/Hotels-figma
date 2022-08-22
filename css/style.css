@@ -502,6 +502,26 @@ html {
   color: #000000;
 }
 
+.select-date {
+  appearance: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  color: #000000;
+}
+
+.select-tourists {
+  appearance: none;
+  width: 121px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  border-bottom: 1px solid #e9e9e9;
+  color: #000000;
+}
+
 .form-btn {
   padding: 13px 30px;
   border: 1px solid #CC9933;
