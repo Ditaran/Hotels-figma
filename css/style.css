@@ -71,6 +71,23 @@ html {
   line-height: 16px;
 }
 
+.btn {
+  padding: 13px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: transparent;
+  color: #CC9933;
+}
+
+.link {
+  transition: color 2300ms cubic-bezier(0,-0.07, 1, 1.26);
+  color: #CC9933;
+}
+
+.link:hover {
+  color: red;
+}
+
 /* header---------------------------------------------------- */
 
 .header-top,
@@ -94,10 +111,9 @@ html {
   color: #666666;
 }
 
-.header-button-account {
+.header-account {
   padding-left: 28px;
-  background: url(/img/Vector.png) no-repeat left;
-  color: #CC9933;
+  background: url(/img/Vector.png) no-repeat left top;
 }
 
 .nav-list {
@@ -106,7 +122,6 @@ html {
 
 .nav-link {
   color: #666666;
-
 }
 
 .nav-item:not(:last-child) {
@@ -119,24 +134,19 @@ html {
 
 .header-bottom {
   margin-top: 30px;
-  padding: 27px 45px;
+  padding: 14px 45px;
   background: #FFFFFF;
   border-radius: 15px;
 }
 
-.bottom-right-link {
-  padding: 13px 20px;
-  border: 1px solid;
-  border-radius: 10px;
-  color: #CC9933;
+.header-btn {
+  width: 314px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.bottom-right-link:not(:last-child) {
-  margin-right: 40px;
-}
 
 /* Special------------------------------------------ */
-
 
 .section-headings {
   margin-top: 70px;
@@ -230,21 +240,24 @@ html {
 /* Services ---------------------------- */
 
 .services-list {
-  height: 684px;
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
 }
 
 .services-item {
   width: 573px;
   height: 330px;
+  margin-right: 24px;
+  margin-bottom: 24px;
   padding-top: 191px;
   padding-bottom: 35px;
   padding-left: 45px;
   border-radius: 15px;
   background: url(/img/10.jpg) center top no-repeat #FFFFFF;
+}
+
+.services-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .services-item:nth-child(2) {
@@ -276,16 +289,15 @@ html {
 /* Advantages --------------------------------- */
 
 .advantages-list {
-  height: 574px;
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
 }
 
 .advantages-item {
   width: 276px;
   height: 276px;
+  margin-right: 22px;
+  margin-bottom: 22px;
   padding-top: 40px;
   padding-bottom: 42px;
   padding-left: 45px;
@@ -293,22 +305,45 @@ html {
   background-color: #FFFFFF;
 }
 
+.advantages-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .advantages-icon {
   width: 66px;
   height: 66px;
+}
+
+.bathtub-icon {
   background: url(/img/bathtub.png);
 }
 
-.advantages-item:nth-child(2) .advantages-icon {
+.hanger-icon {
   background: url(/img/hanger.png);
 }
 
-.advantages-item:nth-child(3) .advantages-icon {
+.heating-icon {
   background: url(/img/heating.png);
 }
 
-.advantages-item:nth-child(4) .advantages-icon {
+.hotel-key-icon {
   background: url(/img/hotel-key.png);
+}
+
+.parking-icon {
+  background: url(/img/parking.png);
+}
+
+.reception-icon {
+  background: url(/img/reception.png);
+}
+
+.security-box-icon {
+  background: url(/img/security-box.png);
+}
+
+.swimming-pool-icon {
+  background: url(/img/swimming-pool.png);
 }
 
 .advantaged-description {
@@ -320,22 +355,25 @@ html {
 /* Placement ---------------------------- */
 
 .placement-list {
-  height: 1368px;
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
 }
 
 .placement-item {
   width: 374px;
   height: 440px;
+  margin-right: 24px;
+  margin-bottom: 24px;
   padding-top: 249px;
   padding-right: 45px;
   padding-bottom: 45px;
   padding-left: 45px;
   border-radius: 15px;
   background: url(/img/23.jpg) center top no-repeat #FFFFFF;
+}
+
+.placement-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .placement-cost-and-rating {
@@ -385,25 +423,9 @@ html {
 
 .placement-location {
   margin-top: 16px;
+  margin-bottom: 20px;
   color: #999999;
 }
-
-.placement-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 13px 20px;
-  color: #CC9933;
-  border: 1px solid;
-  border-radius: 10px;
-}
-
-.placement-link-all {
-  padding-right: 15px;
-  color: #FFFFFF;
-  background: url(/img/Rectangle-empty.svg) no-repeat right;
-}
-
-
 
 .placement-item:nth-child(2) {
   background: url(/img/24.jpg) center top no-repeat #FFFFFF;
@@ -433,7 +455,7 @@ html {
   background: url(/img/29.jpg) center top no-repeat #FFFFFF;
 }
 
-.placement-item:nth-child(9) {
+.placement-item-last {
   padding-top: 373px;
   padding-left: 54px;
   font-weight: 500;
@@ -441,6 +463,12 @@ html {
   line-height: 40px;
   padding-right: 15px;
   background: url(/img/41.jpg) center center no-repeat #FFFFFF;
+}
+
+.placement-link {
+  padding-right: 15px;
+  color: #FFFFFF;
+  background: url(/img/Rectangle-empty.svg) no-repeat right;
 }
 
 /* Want-tour-form ------------------------------- */
@@ -481,14 +509,6 @@ html {
   line-height: 12px;
 }
 
-.form-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  border: none;
-  color: #000000;
-}
-
 .select-text {
   appearance: none;
   width: 169px;
@@ -523,10 +543,7 @@ html {
 }
 
 .form-btn {
-  padding: 13px 30px;
-  border: 1px solid #CC9933;
-  border-radius: 10px;
-  color: #CC9933;
+  padding-right: 30px;
 }
 
 
@@ -569,20 +586,12 @@ html {
   color: #000000;
 }
 
-.contacts {
-  line-height: 24px;
-  color: #CC9933;
-}
-
 .contacts-item-right-description {
   color: #999999;
 }
 
-.contacts-route-creating {
+.contacts-btn {
   padding: 27px 29px;
-  color: #CC9933;
-  border: 1px solid;
-  border-radius: 10px;
 }
 
 .contacts-image {
@@ -599,17 +608,14 @@ html {
   margin-bottom: 30px;
   padding: 45px;
   display: flex;
+  justify-content: space-between;
   background: url(/img/frame11.png) no-repeat bottom #333333;
   border-radius: 15px;
   background-position-x: 738.62px;
 }
 
-.footer-info {
-  margin-right: 125px;
-}
-
 .footer-contacts {
-  margin-right: 269px;
+  margin-right: 135px;
 }
 
 .about-company,
@@ -629,7 +635,6 @@ html {
 
 .user-agreement {
   line-height: 24px;
-  color: #CC9933;
 }
 
 .footer-location {
@@ -640,6 +645,11 @@ html {
 
 .footer-phone {
   margin-bottom: 15px;
+  line-height: 24px;
+}
+
+.footer-mails {
+  line-height: 24px;
 }
 
 .tripadvisor,
