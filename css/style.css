@@ -38,6 +38,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-grey: #999999;
+  --color-white: #ffffff;
+}
 .body {
   background-color: #e5e5e5;
 }
@@ -140,7 +144,7 @@ html {
 .header-bottom {
   margin-top: 30px;
   padding: 14px 45px;
-  background: #FFFFFF;
+  background: var(--color-white);
   border-radius: 15px;
 }
 
@@ -196,14 +200,14 @@ html {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .special-item-price {
   margin-top: 15px;
   margin-bottom: 47px;
   font-size: 20px;
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .special-item-link {
@@ -216,7 +220,7 @@ html {
   width: 573px;
   height: 540px;
   padding: 212px 229px 40px 45px;
-  background: url(/img/33.jpg) center center no-repeat #FFFFFF;
+  background: url(/img/33.jpg) center center no-repeat var(--color-white);
 
 }
 
@@ -259,7 +263,7 @@ html {
   padding-left: 45px;
   font-size: 20px;
   border-radius: 15px;
-  background: url(/img/10.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/10.jpg) center top no-repeat var(--color-white);
 }
 
 .services-item:nth-child(2n) {
@@ -267,15 +271,15 @@ html {
 }
 
 .services-item:nth-child(2) {
-  background: url(/img/15.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/15.jpg) center top no-repeat var(--color-white);
 }
 
 .services-item:nth-child(3) {
-  background: url(/img/12.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/12.jpg) center top no-repeat var(--color-white);
 }
 
 .services-item:nth-child(4) {
-  background: url(/img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg) center top no-repeat var(--color-white);
 }
 
 .services-link {
@@ -309,7 +313,7 @@ html {
   padding-bottom: 42px;
   padding-left: 45px;
   border-radius: 15px;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
 }
 
 .advantages-item:nth-child(4n) {
@@ -376,7 +380,8 @@ html {
   padding-bottom: 45px;
   padding-left: 45px;
   border-radius: 15px;
-  background: url(/img/23.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/23.jpg) center top no-repeat var(--color-white);
+  color:  var(--color-grey);
 }
 
 .placement-item:nth-child(3n) {
@@ -386,10 +391,6 @@ html {
 .placement-cost-and-rating {
   display: flex;
   justify-content: space-between;
-}
-
-.placement-cost {
-  color: #999999;
 }
 
 .placement-price {
@@ -431,35 +432,34 @@ html {
 .placement-location {
   margin-top: 16px;
   margin-bottom: 20px;
-  color: #999999;
 }
 
 .placement-item:nth-child(2) {
-  background: url(/img/24.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/24.jpg) center top no-repeat var(--color-white);
 }
 
 .placement-item:nth-child(3) {
-  background: url(/img/26.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/26.jpg) center top no-repeat var(--color-white);
 }
 
 .placement-item:nth-child(4) {
-  background: url(/img/29-1.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/29-1.jpg) center top no-repeat var(--color-white);
 }
 
 .placement-item:nth-child(5) {
-  background: url(/img/30.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/30.jpg) center top no-repeat var(--color-white);
 }
 
 .placement-item:nth-child(6) {
-  background: url(/img/31.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/31.jpg) center top no-repeat var(--color-white);
 }
 
 .placement-item:nth-child(7) {
-  background: url(/img/27.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/27.jpg) center top no-repeat var(--color-white);
 }
 
 .placement-item:nth-child(8) {
-  background: url(/img/29.jpg) center top no-repeat #FFFFFF;
+  background: url(/img/29.jpg) center top no-repeat var(--color-white);
 }
 
 .placement-item-last {
@@ -469,15 +469,24 @@ html {
   font-size: 20px;
   line-height: 40px;
   padding-right: 15px;
-  background: url(/img/41.jpg) center center no-repeat #FFFFFF;
+  background: url(/img/41.jpg) center center no-repeat var(--color-white);
+  position: relative;
 }
 
 .placement-link {
   padding-right: 15px;
-  color: #FFFFFF;
+  color: var(--color-white);
   background: url(/img/Rectangle-empty.svg) no-repeat right;
 }
 
+.placement-link::after  {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 /* Want-tour-form ------------------------------- */
 
 .form-container {
@@ -506,7 +515,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #FFFFFF;
+  background: var(--color-white);
   border-radius: 15px;
 }
 
@@ -560,7 +569,7 @@ html {
   padding: 45px;
   display: flex;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   border-radius: 15px;
 }
 
@@ -594,7 +603,7 @@ html {
 }
 
 .contacts-item-right-description {
-  color: #999999;
+  color:  var(--color-grey);
 }
 
 .contacts-btn {
@@ -629,7 +638,7 @@ html {
 .footer-description {
   width: 302px;
   line-height: 30.4px;
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .about-company {
@@ -647,7 +656,7 @@ html {
 .footer-location {
   margin-bottom: 15px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .footer-phone {
